@@ -50,7 +50,7 @@ class Home extends StatelessWidget {
         physics: BouncingScrollPhysics(),
         child: Column(
           children: <Widget>[
-            const SizedBox(height: 25),
+            const SizedBox(height: 10),
             ProfileContainer(
               userName: 'Arkace',
               imagePath: 'assets/images/my_dp.png',
