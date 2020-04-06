@@ -86,6 +86,7 @@ class PostListItem extends StatelessWidget {
                           name,
                           style: TextStyle(
                             fontSize: 20,
+                            color: BLUE_TEXT_COLOR,
                             fontWeight: FontWeight.w500,
                           ),
                         ),

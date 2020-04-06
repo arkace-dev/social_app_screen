@@ -4,11 +4,14 @@ import 'package:flutter/material.dart';
 import '../../utils/colors.dart';
 
 class SearchBox extends StatelessWidget {
+  final double padding;
+
+  const SearchBox({this.padding});
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(
-        horizontal: 32.0,
+      padding: EdgeInsets.symmetric(
+        horizontal: padding,
       ),
       child: Container(
         height: 65,

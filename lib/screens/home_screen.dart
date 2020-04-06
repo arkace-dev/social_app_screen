@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:social_app_screen/widgets/home_screen_widgets/post_list_item.dart';
 
-// Utils
-import '../utils/colors.dart';
-
 // Widgets
 import '../widgets/home_screen_widgets/stories_list_builder.dart';
 import '../widgets/home_screen_widgets/search_box.dart';
@@ -41,22 +38,21 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        child: Container(
-          color: Colors.transparent,
+        child: Padding(
+          padding: const EdgeInsets.only(top: 30.0),
+          child: ProfileContainer(
+            userName: 'Arkace',
+            imagePath: 'assets/images/my_dp.png',
+          ),
         ),
-        preferredSize: Size.fromHeight(15),
+        preferredSize: Size.fromHeight(130),
       ),
       body: SingleChildScrollView(
         physics: BouncingScrollPhysics(),
         child: Column(
           children: <Widget>[
-            const SizedBox(height: 10),
-            ProfileContainer(
-              userName: 'Arkace',
-              imagePath: 'assets/images/my_dp.png',
-            ),
-            const SizedBox(height: 40),
-            SearchBox(),
+            const SizedBox(height: 30),
+            SearchBox(padding: 32.0),
             const SizedBox(height: 40),
             Container(height: 100, child: StoriesListBuilder()),
             const SizedBox(height: 24),

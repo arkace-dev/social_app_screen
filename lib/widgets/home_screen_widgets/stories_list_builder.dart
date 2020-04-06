@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+// Screens
+import '../../screens/conversation_screen.dart';
+
 // Utils
 import '../../utils/colors.dart';
 
@@ -28,24 +31,28 @@ class StoriesListBuilder extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(left: 32.0, right: 8.0),
           child: Center(
-            child: Container(
-              width: 94,
-              height: 94,
-              child: Icon(
-                Icons.add,
-                size: 32,
-                color: GREY_TEXT_COLOR,
-              ),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(47),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black12,
-                    blurRadius: 3,
-                    spreadRadius: 1,
-                  ),
-                ],
+            child: GestureDetector(
+              onTap: () =>
+                  Navigator.of(context).pushNamed(ConversationScreen.routeName),
+              child: Container(
+                width: 94,
+                height: 94,
+                child: Icon(
+                  Icons.add,
+                  size: 32,
+                  color: GREY_TEXT_COLOR,
+                ),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(47),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black12,
+                      blurRadius: 3,
+                      spreadRadius: 1,
+                    ),
+                  ],
+                ),
               ),
             ),
           ),

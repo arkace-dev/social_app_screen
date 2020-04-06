@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 
 // Screens
 import './screens/home_screen.dart';
+import './screens/profile_screen.dart';
+import './screens/conversation_screen.dart';
 
 // Utils
 import './utils/colors.dart';
@@ -27,8 +29,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         canvasColor: CANVAS_COLOR,
+        fontFamily: 'Raleway',
       ),
       home: HomeScreen(),
+      routes: {
+        ProfileScreen.routeName: (ctx) => ProfileScreen(),
+        ConversationScreen.routeName: (ctx) => ConversationScreen(),
+      },
     );
   }
 }

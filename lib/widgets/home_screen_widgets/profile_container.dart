@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+// Screens
+import '../../screens/profile_screen.dart';
+
 // Utils
 import '../../utils/colors.dart';
 
@@ -21,6 +24,7 @@ class ProfileContainer extends StatelessWidget {
         children: <Widget>[
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               const Text(
                 'Hello,',
@@ -37,29 +41,37 @@ class ProfileContainer extends StatelessWidget {
                 userName,
                 style: TextStyle(
                   fontSize: 26,
+                  color: BLUE_TEXT_COLOR,
                   fontWeight: FontWeight.bold,
                 ),
               ),
             ],
           ),
           const Spacer(),
-          Container(
-            width: 100,
-            height: 100,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(50),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black38,
-                  offset: Offset(0, 1),
-                  blurRadius: 1,
-                  spreadRadius: 1,
+          GestureDetector(
+            onTap: () =>
+                Navigator.of(context).pushNamed(ProfileScreen.routeName),
+            child: Container(
+              width: 100,
+              height: 100,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(50),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black38,
+                    offset: Offset(0, 1),
+                    blurRadius: 1,
+                    spreadRadius: 1,
+                  ),
+                ],
+              ),
+              child: Hero(
+                tag: 'profile_picture',
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(50),
+                  child: Image.asset(imagePath),
                 ),
-              ],
-            ),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(50),
-              child: Image.asset(imagePath),
+              ),
             ),
           ),
         ],

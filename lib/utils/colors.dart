@@ -7,3 +7,4 @@ const List<Color> PINK_GRADIENT = [
 
 const Color CANVAS_COLOR = Color(0xFFF9FCFF);
 const Color GREY_TEXT_COLOR = Color(0xFFB0C6E1);
+const Color BLUE_TEXT_COLOR = Color(0xFF433B69);
