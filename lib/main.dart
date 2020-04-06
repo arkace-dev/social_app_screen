@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 // Screens
-import './screens/home.dart';
+import './screens/home_screen.dart';
 
 // Utils
 import './utils/colors.dart';
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         canvasColor: CANVAS_COLOR,
       ),
-      home: Home(),
+      home: HomeScreen(),
     );
   }
 }

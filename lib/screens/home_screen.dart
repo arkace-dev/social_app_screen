@@ -9,7 +9,7 @@ import '../widgets/home_screen_widgets/stories_list_builder.dart';
 import '../widgets/home_screen_widgets/search_box.dart';
 import '../widgets/home_screen_widgets/profile_container.dart';
 
-class Home extends StatelessWidget {
+class HomeScreen extends StatelessWidget {
   final List<Map<String, dynamic>> _listOfPosts = [
     {
       'name': 'Shane Robertson',
