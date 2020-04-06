@@ -19,9 +19,10 @@ Dribbble shot developed using flutter.
 3. Connect device or virtual device to the computer
 4. Run 'flutter run --release' to compile to release mode
 
-## Images
+## Developer Info
 
-1. Home Screen
+-  Instagram [arkace.dev](https://www.instagram.com/arkace.dev/)
+-  Dribbble [Arkace](https://dribbble.com/arkace-dev)
 
 ## MIT LICENSE
 
