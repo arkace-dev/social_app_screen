@@ -91,7 +91,7 @@ class ConversationScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               const Text(
-                'My Profile',
+                'My Conversations',
                 style: TextStyle(
                   fontSize: 26,
                   color: BLUE_TEXT_COLOR,
