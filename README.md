@@ -23,6 +23,7 @@ Dribbble shot developed using flutter.
 
 -  Instagram: [arkace.dev](https://www.instagram.com/arkace.dev/)
 -  Dribbble: [Arkace](https://dribbble.com/arkace-dev)
+-  Rive: [Arkace](https://rive.app/a/Arkace/files/recent/all)
 
 ## MIT LICENSE
 
