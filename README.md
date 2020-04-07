@@ -29,7 +29,7 @@ Dribbble shot developed using flutter.
 
 -  [Home Screen](https://i.imgur.com/9pa8LtZ.jpg)
 -  [Profile Screen](https://i.imgur.com/GEJbr9m.jpg)
--  [Conversations Screen](https://i.imgur.com/hwIM1kd.jpg)
+-  [Conversations Screen](https://i.imgur.com/yw953pl.jpg)
 
 ## MIT LICENSE
 
